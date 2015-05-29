@@ -32,5 +32,4 @@ public class ControllerColis {
     public void creerColis(String name){
         LOGGER.info("Je suis dans creerColis()");
     }
-    
 }
