@@ -21,6 +21,7 @@ public class ControllerColis {
     public static final ControllerColis instance = new ControllerColis();
     
     
+    
     public static ControllerColis getController(){
         return instance ;
     }
@@ -33,12 +34,5 @@ public class ControllerColis {
         LOGGER.info("Je suis dans creerColis()");
     }
     
-    public void testBase(){
-        
-        TestBD monTest = new TestBD();
-        String[] arguments = new String[2] ;
-        arguments[0] = "test" ;
-        arguments[1] = "test2";
-        monTest.main(arguments);
-    }
+   
 }

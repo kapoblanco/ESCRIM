@@ -13,18 +13,33 @@ import java.util.logging.Level;
  * @author David
  */
 public class JFrame_Principale extends javax.swing.JFrame {
-//Nouvelle version de test
-    // Assure que la classe courante s'appelle LOGGER
+/******************************************************************************/
+/*                                                                            */
+/*                              VARIABLES GLOBALES                            */
+/*                                                                            */
+/******************************************************************************/ 
+    // Assure que la classe courante appelle le LOGGER
     private final static Logger LOGGER = Logger.getLogger(JFrame_Principale.class.getName()); 
-    /**
-     * Creates new form JFrame_Principale
-     */
+    
+    // Création de l'objet statique Base_de_Donnees
+    public static final Base_Escrim Base_de_Donnees = new Base_Escrim();
+    
+/******************************************************************************/
+/*                                                                            */
+/*                    METHODES PROPRES A LA FRAME                             */
+/*                                                                            */
+/******************************************************************************/ 
+    
+    
     public JFrame_Principale() {
+        //Initialise la JFrame
         initComponents();
         
+        //Affiche message
         LOGGER.info("Je suis dans JFrame_Principale()");
-        LOGGER.warning("Je suis un warning");
-        LOGGER.severe("Je suis sévère");
+        
+        //Appelle la méthode lancerBase()
+        lancerBase();
         }
 
     /**
@@ -124,6 +139,17 @@ public class JFrame_Principale extends javax.swing.JFrame {
                 new JFrame_Principale().setVisible(true);
             }
         });
+    }
+        
+/******************************************************************************/
+/*                                                                            */
+/*                          METHODE LANCERBASE()                              */
+/*              PARAM IN : VOID         PARAM OUT : VOID                      */
+/******************************************************************************/    
+    
+     public void lancerBase(){
+        String[] args = {"test","test"};
+        Base_de_Donnees.main(args);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
