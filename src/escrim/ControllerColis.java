@@ -32,4 +32,13 @@ public class ControllerColis {
     public void creerColis(String name){
         LOGGER.info("Je suis dans creerColis()");
     }
+    
+    public void testBase(){
+        
+        TestBD monTest = new TestBD();
+        String[] arguments = new String[2] ;
+        arguments[0] = "test" ;
+        arguments[1] = "test2";
+        monTest.main(arguments);
+    }
 }
