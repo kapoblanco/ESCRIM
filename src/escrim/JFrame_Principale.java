@@ -43,6 +43,9 @@ public class JFrame_Principale extends javax.swing.JFrame {
         
         //Appelle la méthode lancerBase()
         lancerBase();
+        
+        //Création d'un colis : à placer correctement quand ce sera nécessaire.
+        ControllerColis.getController().creerColis();
         }
 
     /**
@@ -219,7 +222,7 @@ public class JFrame_Principale extends javax.swing.JFrame {
             mainPanel.enable(false);
         }else
             errorLabel.setVisible(true); //Rends visible le label d'erreur de connexion
-        ControllerColis.getController().creerColis(usrTextField.getText());
+        
     }//GEN-LAST:event_connectButtonActionPerformed
 
     private void stockButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockButtonActionPerformed

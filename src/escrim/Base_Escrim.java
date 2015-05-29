@@ -45,7 +45,7 @@ public class Base_Escrim{
         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/?"+"user=sonar2&password=sonar2");
         
         //Affiche
-        LOGGER.info("Connexion à la base réussie");
+        LOGGER.info("Connexion à la base de données ESCRIM réussie");
         
         //Créé l'objet requête
         Statement requete = conn.createStatement();

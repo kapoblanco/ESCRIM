@@ -30,7 +30,7 @@ public class ControllerColis {
         LOGGER.setLevel(Level.INFO);
     }
     
-    public void creerColis(String name){
+    public void creerColis(){
         LOGGER.info("Je suis dans creerColis()");
     }
     
