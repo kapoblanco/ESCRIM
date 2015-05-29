@@ -13,20 +13,20 @@ import java.util.logging.Level;
  *
  * @author David
  */
-public class ControllerColis {
+public class Controller_Colis {
     
     // Assure que la classe courante utilise le logger 'LOGGER'
-    private final static Logger LOGGER = Logger.getLogger(ControllerColis.class.getName()); 
+    private final static Logger LOGGER = Logger.getLogger(Controller_Colis.class.getName()); 
         
-    public static final ControllerColis instance = new ControllerColis();
+    public static final Controller_Colis instance = new Controller_Colis();
     
     
     
-    public static ControllerColis getController(){
+    public static Controller_Colis getController(){
         return instance ;
     }
     
-    private ControllerColis(){
+    private Controller_Colis(){
         LOGGER.setLevel(Level.INFO);
     }
     

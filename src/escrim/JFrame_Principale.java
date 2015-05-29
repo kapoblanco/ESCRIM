@@ -45,7 +45,7 @@ public class JFrame_Principale extends javax.swing.JFrame {
         lancerBase();
         
         //Création d'un colis : à placer correctement quand ce sera nécessaire.
-        ControllerColis.getController().creerColis();
+        Controller_Colis.getController().creerColis();
         }
 
     /**
