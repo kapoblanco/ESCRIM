@@ -23,7 +23,6 @@ public class JFrame_Principale extends javax.swing.JFrame {
         initComponents();
         errorLabel.setVisible(false);   //Rends invisible le label d'erreur de connexion
         menuPanel.setVisible(false);    //Rends invisible le second panel
-        menuPanel.enable(false);
         }
 
     /**
@@ -188,16 +187,14 @@ public class JFrame_Principale extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void connectButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_connectButtonActionPerformed
-        LOGGER.info("Connexion à la base de données\n");
+        LOGGER.info("Tentative de connexion\n");
         String user = usrTextField.getText(); //Récupération de l'identifiant  
         String password = passwordField.getText(); //Récupération du mot de passe
         LOGGER.info(user + " "+password);
         if(user.equals("usr") && password.equals("pass") ){ //Teste les identifiants de connexion
             LOGGER.info("Connexion réussi");
-            menuPanel.setVisible(true);
-            menuPanel.enable(true);
-            mainPanel.setVisible(false);
-            mainPanel.enable(false);
+            menuPanel.setVisible(true); //Affichage second panel
+            mainPanel.setVisible(false); //Fermeture panel principal
         }else
             errorLabel.setVisible(true); //Rends visible le label d'erreur de connexion
         ControllerColis.getController().creerColis(usrTextField.getText());
