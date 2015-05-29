@@ -13,7 +13,7 @@ import java.util.logging.Level;
  * @author David
  */
 public class JFrame_Principale extends javax.swing.JFrame {
-
+//Nouvelle version de test
     // Assure que la classe courante s'appelle LOGGER
     private final static Logger LOGGER = Logger.getLogger(JFrame_Principale.class.getName()); 
     /**
