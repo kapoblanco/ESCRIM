@@ -16,7 +16,7 @@ public class ESCRIM {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //JE TESTE JE TESTE JE TESTE
+        //JE SUIS UN CODEUR FOU
     }
     
 }
